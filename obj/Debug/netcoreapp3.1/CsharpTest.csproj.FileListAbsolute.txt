@@ -1,0 +1,13 @@
+E:\00_wilson課程\CsharpText\bin\Debug\netcoreapp3.1\CsharpTest.exe
+E:\00_wilson課程\CsharpText\bin\Debug\netcoreapp3.1\CsharpTest.deps.json
+E:\00_wilson課程\CsharpText\bin\Debug\netcoreapp3.1\CsharpTest.runtimeconfig.json
+E:\00_wilson課程\CsharpText\bin\Debug\netcoreapp3.1\CsharpTest.runtimeconfig.dev.json
+E:\00_wilson課程\CsharpText\bin\Debug\netcoreapp3.1\CsharpTest.dll
+E:\00_wilson課程\CsharpText\bin\Debug\netcoreapp3.1\CsharpTest.pdb
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.csproj.CoreCompileInputs.cache
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.AssemblyInfoInputs.cache
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.AssemblyInfo.cs
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.dll
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.pdb
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.genruntimeconfig.cache
+E:\00_wilson課程\CsharpText\obj\Debug\netcoreapp3.1\CsharpTest.csprojAssemblyReference.cache
