@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsharpTest
+namespace HW_04
 {
     //傳入一個Vector2移動玩家的方法 不知道怎麼寫
-    class player
+    struct player
     {
         private int _hp;
         private Vector2 _position;

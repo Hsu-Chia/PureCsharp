@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsharpTest
+namespace HW_04
 {
-    class Vector2
+    struct Vector2
     {
         public float X;
         public float Y;
