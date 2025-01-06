@@ -8,6 +8,7 @@ using Counter3 = Hw_05_Counter_3.Counter;
 using CsharpTest.HW_05;
 using Vector2_04 = HW_04.Vector2;
 using Vector2_05 = HW_05.Vector2;
+using CsharpTest.HW_06;
 
 
 namespace CsharpTest
@@ -17,7 +18,7 @@ namespace CsharpTest
         public void Run()
         {
 
-            Homework HW = new Homework();
+            
 
             while (true)
             {
@@ -25,23 +26,23 @@ namespace CsharpTest
                 String HWN = Console.ReadLine();
                 if (HWN == "Hw_04_01")
                 {
-                    HW.Hw_04_01();
+                    Hw_04_01();
                 }
                 else if (HWN == "Hw_04_02")
                 {
-                    HW.Hw_04_02();
+                    Hw_04_02();
                 }
                 else if (HWN == "Hw_04_03")
                 {
-                    HW.Hw_04_03();
+                    Hw_04_03();
                 }
                 else if (HWN == "Hw_04_04")
                 {
-                    HW.Hw_04_04();
+                    Hw_04_04();
                 }
                 else if (HWN == "Hw_04_05")
                 {
-                    HW.Hw_04_05();
+                    Hw_04_05();
                 }
                 else if (HWN == "Q")
                 {
@@ -50,27 +51,35 @@ namespace CsharpTest
                 }
                 else if (HWN == "Hw_05_03")
                 {
-                    HW.Hw_05_03();
+                    Hw_05_03();
                 }
                 else if (HWN == "Hw_05_04")
                 {
-                    HW.Hw_05_04();
+                    Hw_05_04();
                 }
                 else if (HWN == "Hw_05_05")
                 {
-                    HW.Hw_05_05();
+                    Hw_05_05();
                 }
                 else if (HWN == "Hw_05_06")
                 {
-                    HW.Hw_05_06();
+                   Hw_05_06();
                 }
                 else if (HWN == "Hw_05_07")
                 {
-                    HW.Hw_05_07();
+                    Hw_05_07();
                 }
                 else if (HWN == "Hw_05_08")
                 {
-                    HW.Hw_05_08();
+                    Hw_05_08();
+                }
+                else if (HWN == "Hw_06_02")
+                {
+                    Hw_06_02();
+                }
+                else if (HWN == "Hw_06_03")
+                {
+                    Hw_06_03();
                 }
                 else
                 {
@@ -246,5 +255,45 @@ namespace CsharpTest
             Console.WriteLine($"Student A -> ID: {studentA.id}, Name: {studentA.Name}");
             Console.WriteLine($"Student B -> ID: {studentB.id}, Name: {studentB.Name}");
         }
+
+        public void Hw_06_02()
+        {
+            Player player = new Player("勇者", 5.0f, 10);
+            Enemy enemy = new Enemy("黑暗騎士", 3.5f, 20.0f);
+            Npc npc = new Npc("商人", 2.0f, "歡迎來到商店！");
+            // 宣告 Character 類型變數，有找教學參考
+            Character character;
+
+            character = player;
+            character.Move();
+            character.Attack();
+            character.CastSkill();
+            character = enemy;
+            character.Move();
+            character.Attack();
+            character.CastSkill();
+            character = npc;
+            character.Move();
+            character.Attack(); // 父類別方法
+            character.CastSkill();
+        }
+
+        public void Hw_06_03()
+        {
+            Player player = new Player("勇者", 5.0f, 10);
+            Enemy enemy = new Enemy("黑暗騎士", 3.5f, 20.0f);
+            Npc npc = new Npc("商人", 2.0f, "歡迎來到商店！");
+            Hw_06_03_TestCharacter(player);
+            Hw_06_03_TestCharacter(enemy);
+            Hw_06_03_TestCharacter(npc);
+        }
+        public void Hw_06_03_TestCharacter(Character character)//這裡有點困惑
+        {
+            character.Move();
+            character.Attack();
+            character.CastSkill();
+
+        }
+
     }
 }
