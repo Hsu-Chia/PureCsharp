@@ -9,6 +9,7 @@ using CsharpTest.HW_05;
 using Vector2_04 = HW_04.Vector2;
 using Vector2_05 = HW_05.Vector2;
 using CsharpTest.HW_06;
+using DynamicArray_1;
 
 
 namespace CsharpTest
@@ -81,6 +82,11 @@ namespace CsharpTest
                 {
                     Hw_06_03();
                 }
+                else if (HWN == "Hw_07_02")
+                {
+                    Hw_07_02();
+                }
+             
                 else
                 {
                     Console.WriteLine("未找到對應作業名稱");
@@ -295,5 +301,76 @@ namespace CsharpTest
 
         }
 
+        void Hw_07_02()
+        {
+            DynamicArray data = new DynamicArray();
+            data.Add(7);
+            data.Add(1);
+            data.Add(9);
+            data.Add(4);
+            data.Add(5);
+
+            Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+            Console.WriteLine($"Index = 2 的資料是 {data.Get(2)}");
+
+            data.Add(6);
+            data.Add(0);
+            Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+            data.Remove(9);
+            Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+            data.Add(8);
+            Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+            data.Sort(OrderType.Descending);
+            Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+            data.Sort(OrderType.Ascending);
+            Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+            try
+            {
+                data.Get(100);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+        //void Hw_07_03()
+        //{
+        //    DynamicLinkedList data = new DynamicLinkedList();
+        //    data.Add(7);
+        //    data.Add(1);
+        //    data.Add(9);
+        //    data.Add(4);
+        //    data.Add(5);
+
+        //    Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+        //    Console.WriteLine($"Index = 2 的資料是 {data.Get(2)}");
+
+        //    data.Add(6);
+        //    data.Add(0);
+        //    Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+        //    data.Remove(9);
+        //    Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+        //    data.Add(8);
+        //    Console.WriteLine($"當前容器內有 {data.Size()} 筆資料，內容是： {data.ToString()}");
+
+        //    try
+        //    {
+        //        data.Get(100);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine(e);
+        //    }
+        //}
     }
+
 }
